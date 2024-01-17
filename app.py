@@ -22,4 +22,4 @@ def programming():
   return render_template('programming.html')
 
 if __name__ == '__main__':
-  app.run(debug=True, port=8800)
+  app.run(debug=True)
