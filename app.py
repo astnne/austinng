@@ -5,10 +5,6 @@ app = Flask(__name__)
 def hello():
   return render_template('index.html')
 
-@app.route('/index')
-def index():
-  return redirect()
-
 @app.route('/cubing')
 def cubing():
   return render_template('cubing.html')
