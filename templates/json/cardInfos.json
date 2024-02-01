@@ -1,18 +1,29 @@
-["https://i.imgur.com/2BMBtLz.png", 
-"Cubing", 
-"Austin moves his fingers.", 
-"View Austin's WCA Profile", 
-"https://www.worldcubeassociation.org/persons/2023NGAU01", 
-"January 18, 2024 at 1:20AM"],
-["https://i.imgur.com/1481ERD.jpg",
-"Languages",
-"Austin loves to speak Chinese.",
-"View About Austin's School in China",
-"https://upimg.baike.so.com/doc/4160593-4360651.html",
-"January 18, 2024 at 1:28AM"],
-["https://i.imgur.com/VHHLDjr.png",
-"Programming",
-"Austin fait des trucs.",
-"View Austin's Other Website",
-"https://astnne.github.io/",
-"January 18, 2024 at 1:33AM"]
+[
+  {
+      "image_url": "https://i.imgur.com/2BMBtLz.png",
+      "category": "Cubing",
+      "description": "Austin moves his fingers.",
+      "profile_link": "https://www.worldcubeassociation.org/persons/2023NGAU01",
+      "link_text": "View Austin's WCA Profile",
+      "custom_link": "/cubing",
+      "date": "January 18, 2024 at 1:20AM"
+  },
+  {
+      "image_url": "https://i.imgur.com/1481ERD.jpg",
+      "category": "Languages",
+      "description": "Austin loves to speak Chinese.",
+      "profile_link": "https://upimg.baike.so.com/doc/4160593-4360651.html",
+      "link_text": "View About Austin's School in China",
+      "custom_link": "/languages",
+      "date": "January 18, 2024 at 1:28AM"
+  },
+  {
+      "image_url": "https://i.imgur.com/VHHLDjr.png",
+      "category": "Programming",
+      "description": "Austin moves his fingers. Again.",
+      "profile_link": "https://astnne.github.io/",
+      "link_text": "View Austin's Other Website",
+      "custom_link": "/programming",
+      "date": "January 18, 2024 at 1:33AM"
+  }
+]

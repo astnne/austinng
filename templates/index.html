@@ -48,15 +48,15 @@
         </div>
       </div>
     </div>
-    {% for i in range(3): %}
+    {% for item in cardInfos: %}
       <div class="col">
         <div class="card h-100">
-          <img src="{{ cardInfos[i][0] }}" class="card-img-top" alt="...">
+          <img src='{{ item["image_url"] }}' class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{{ cardInfos[i][1] }}</h5>
-            <p class="card-text">{{ cardInfos[i][2] }}<br><a href="{{ cardInfos[i][3] }}" target="_blank">{{ cardInfos[i][4] }}</a></p>
-            <a href="{{ cardInfos[i][5] }}" target="_blank" class="btn btn-outline-primary">See more</a>
-            <p class="card-text"><small class="text-body-secondary">{{ cardInfos[i][6] }}</small></p>
+            <h5 class="card-title">{{ item["category"] }}</h5>
+            <p class="card-text">{{ item["description"] }}<br><a href='{{ item["profile_link"] }}' target="_blank">{{ item["link_text"] }}</a></p>
+            <a href='{{ item["custom_link"] }}' target="_blank" class="btn btn-outline-primary">See more</a>
+            <p class="card-text"><small class="text-body-secondary">{{ item["date"] }}</small></p>
           </div>
         </div>
       </div>
