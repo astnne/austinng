@@ -5,9 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-  cardInfos = json.load(open('./templates/json/cardInfos.json'))
-  print(cardInfos)
-  return render_template('index.html', cardInfos=cardInfos)
+  header = json.load(open('./templates/json/index/header.json'))
+  cardInfos = json.load(open('./templates/json/index/cardInfos.json'))
+  featured = json.load(open('./templates/json/index/featured.json'))
+  return render_template('index.html', header=header, cardInfos=cardInfos, featured=featured)
 
 @app.route('/cubing')
 def cubing():
