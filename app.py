@@ -12,9 +12,7 @@ def hello():
 
 @app.route('/speedcubing')
 def cubing():
-  header = json.load(open('./templates/json/speedcubing/header/header.json'))
-  cards = json.load(open('./templates/json/speedcubing/content/cards.json'))
-  return render_template('speedcubing.html', header=header, cards=cards)
+  return render_template('speedcubing.html')
 
 @app.route('/languages')
 def languages():
@@ -26,7 +24,9 @@ def programming():
 
 @app.route('/blog')
 def blog():
-  return render_template('blog.html')
+  header = json.load(open('./templates/json/blog/header/header.json'))
+  cards = json.load(open('./templates/json/blog/content/cards.json'))
+  return render_template('blog.html', header=header, cards=cards)
 
 if __name__ == '__main__':
   app.run(debug=True)
