@@ -6,7 +6,7 @@
   <span class="fs-2">{{ header["name"] }}</span><br>
   <span class="ps-2 border-start border-success fs-5">{{ header["description"] }}</span>
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-    {% for item in cardInfos: %}
+    {% for item in cards: %}
       <div class="col">
         <div class="card h-100">
           <img src='{{ item["image_url"] }}' class="card-img-top" alt="...">
